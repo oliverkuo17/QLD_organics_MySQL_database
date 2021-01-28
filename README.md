@@ -7,7 +7,7 @@ The database is designed as followed.
 <img src="images/erd.jpg">
 
 The relational schema:
-<img src="images/schema.jpg"">
+<img src="images/schema.jpg">
 
 customer table:
 member table:
