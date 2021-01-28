@@ -3,9 +3,9 @@ Design and implement a database for Queensland Organics(QO).
 QO is an organization that helps the farmers (member) in QLD better sell and distribute their products.
 The gaol of this project is to help QO to trnasmit from spreadsheets to databases.
 The database is designed as followed.
-<img src="images/erd.JPG" width="600" height="600">
+<img src="images/erd.jpg" width="600" height="600">
 The relational schema:
-<img src="images/schema.JPG" width="600" height="600">
+<img src="images/schema.jpg" width="600" height="600">
 
 customer table:
 member table:
