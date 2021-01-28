@@ -1,3 +1,5 @@
+/* Create tables for QLD Organics */
+
 CREATE TABLE `customer` (
   `customerID` int NOT NULL AUTO_INCREMENT,
   `customerName` varchar(45) NOT NULL,
@@ -95,6 +97,9 @@ CREATE TABLE `message` (
   CONSTRAINT `FK_customerID_1` FOREIGN KEY (`customerID`) REFERENCES `customer` (`customerID`),
   CONSTRAINT `FK_memberID_1` FOREIGN KEY (`memberID`) REFERENCES `member` (`memberID`));
 
+									   
+/* Create a trigger which will allow the retailers to receive a message when they get a new order */
+									   
 DELIMITER //
 CREATE TRIGGER order_notification
 AFTER INSERT
@@ -105,7 +110,7 @@ VALUES(new.customerID, new.memberID, Now(), CONCAT('You have a nwe order. orderI
 	END; //
 DELIMITER ;
 
-
+/* Insert statements */
 
 INSERT INTO `member`(memberName, contactName, startDate, businessName, address, phoneNumber, emailAddress, memberDescription)
 VALUES
@@ -176,7 +181,7 @@ VALUES
 (5, 5, 1),(5, 6, 1),(5, 3, 3),
 (6, 2, 1),(6, 5, 5),(6, 3, 1);
 
-
+/* Customized queries for QLD Organics */
 
 SELECT o.orderID, o.customerID as 'accountNumber', c.customerName, o.orderDate,
 coalesce(p.itemName, 'ALL') as itemName,
