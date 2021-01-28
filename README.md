@@ -10,25 +10,33 @@ The relational schema:
 <img src="images/schema.jpg">
 
 customer table:
+
 <img src="images/customer.PNG">
 
 member table:
+
 <img src="images/member.PNG">
 
 order table:
+
 <img src="images/order.PNG">
 
 order item table:
+
 <img src="images/order_item.PNG">
 
 product item table:
+
 <img src="images/product_item.PNG">
 
 shipping table:
+
 <img src="images/shipping.PNG">
 
 stock table:
+
 <img src="images/stock.PNG">
 
 message table:
+
 <img src="images/message.PNG">
